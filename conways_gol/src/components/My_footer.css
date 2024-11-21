@@ -1,0 +1,8 @@
+/* FILE: components/My_footer.css */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 2px -2px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa; /* Ensure the background color matches the rest of the footer */
+}
