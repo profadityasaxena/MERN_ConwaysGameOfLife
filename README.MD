@@ -11,3 +11,25 @@ Conway's Game of Life is a cellular automaton devised by the British mathematici
 4. **Death by Overcrowding**: A live cell with more than three live neighbors dies.
 
 The game is played on a two-dimensional grid where each cell interacts with its eight neighbors, which are the cells that are horizontally, vertically, or diagonally adjacent. The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed—births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick. The rules continue to be applied repeatedly to create further generations.
+
+## How to Download and Run
+To download and run this project, follow these steps:
+
+1. Clone the repository to your local machine using the command:
+    ```bash
+    git clone https://github.com/yourusername/MERN_ConwaysGame.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd MERN_ConwaysGame/conways_gol
+    ```
+3. Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the application:
+    ```bash
+    npm start
+    ```
+
+The application should now be running on `http://localhost:3000`.
