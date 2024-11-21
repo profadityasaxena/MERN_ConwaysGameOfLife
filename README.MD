@@ -3,6 +3,9 @@
 ## Introduction
 Conway's Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970. It is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. The game consists of a grid of cells that can live, die, or multiply based on a few mathematical rules.
 
+## Project Overview
+This project is built using the MERN stack, which stands for MongoDB, Express, React, and Node.js. It features an interactive user interface and is designed as a tutorial to cover key features of React.
+
 ## Rules
 
 1. **Birth**: A dead cell with exactly three live neighbors becomes a live cell.
