@@ -1,4 +1,19 @@
 /* FILE: components/My_game.css */
 .custom-jumbotron {
   padding: 30px;
+  align-items: center;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
 }
