@@ -4,23 +4,29 @@ import './My_grid.css';
 
 class MyGrid extends Component {
   handleCellClick = (rowIndex, cellIndex) => {
-    console.log(`Clicked cell at column ${cellIndex}, row ${rowIndex}`);
-    // You can also update the state or perform other actions here
+    const newGrid = this.props.gridFull.map((row, rIdx) =>
+      row.map((cell, cIdx) => {
+        if (rIdx === rowIndex && cIdx === cellIndex) {
+          return cell === 1 ? 0 : 1; // Toggle cell state
+        }
+        return cell;
+      })
+    );
+    this.props.updateGrid(newGrid); // Call the updateGrid function passed as a prop
   };
 
   render() {
-    const { columns, rows, gridFull } = this.props;
+    const { gridFull } = this.props;
 
-    // Render the grid using the gridFull prop
     return (
-      <div>
+      <div className="my-grid-container">
         <div className="grid">
           {gridFull.map((row, rowIndex) => (
             <div key={rowIndex} className="grid-row">
               {row.map((cell, cellIndex) => (
                 <div
                   key={cellIndex}
-                  className="grid-cell"
+                  className={`grid-cell ${cell === 1 ? 'grid-cell-alive' : ''}`}
                   onClick={() => this.handleCellClick(rowIndex, cellIndex)}
                   title={`Row: ${rowIndex}, Column: ${cellIndex}`}
                 ></div>

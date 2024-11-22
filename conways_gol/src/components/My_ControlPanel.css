@@ -1,0 +1,10 @@
+/* FILE: components/My_ControlPanel.css */
+.control-panel {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.control-panel .btn {
+  margin: 0 10px;
+}
