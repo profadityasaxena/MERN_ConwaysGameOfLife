@@ -22,7 +22,7 @@ To download and run this project, follow these steps:
 
 1. Clone the repository to your local machine using the command:
     ```bash
-    git clone https://github.com/yourusername/MERN_ConwaysGame.git
+    git clone https://github.com/profadityasaxena/MERN_ConwaysGameOfLife.git
     ```
 2. Navigate to the project directory:
     ```bash
